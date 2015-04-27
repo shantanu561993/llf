@@ -95,7 +95,7 @@ def upload_img(im):
         	print "Cannot Upload .. Didn't Get Image Properly"
 def relate(pid):
 	sku=int(raw_input("Enter SKU   "))
-	x="http://www.lifelineforyou.com/bcd/?sku="+str(sku)+"&pid="+str(pid)
+	x="http://URL?sku="+str(sku)+"&pid="+str(pid)
 	print x
 	urllib2.urlopen(x).read()
 	print "==========File Relation SUCCESS=============="
@@ -105,7 +105,7 @@ f=open('temp.csv','r')
 threads=[]
 images=[]
 count=0
-client =Client('http://lifelineforyou.com/xxx.php','resham','admin')
+client =Client('http://URL/xxx.php','username','password')
 for line in f:
 	#t=somefunction(line.strip())
 	#t.start()
