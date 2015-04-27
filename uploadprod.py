@@ -11,7 +11,7 @@ for line in f:
 	pr=urllib.pathname2url(pr.strip().rstrip('/-'))
 	#print pr
 	payload={'cat1':c1,"cat2":c2,"cat3":c3,"cat4":c4,"prod":pd,"price":int(pr)}
-	r=requests.post("http://www.lifelineworkstation.com/main/pricelist/temp.php",data=payload)
+	r=requests.post("http://URL/main/pricelist/temp.php",data=payload)
 	print r.text
 	
 	
